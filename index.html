@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Доставка еды здоровой</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+	<header class="main-header">
+		<nav class="nav-main">
+			<div class="nav-head-1" id="logo">
+				<img src="icons/leaf.svg" id="logo_pic">
+				<p class="p-header" id="name">Healthyfood</p>
+			</div>
+			<div class="nav-head-1" id="choise-city">
+				<img src="icons/location.svg">
+				<p class="p-header">Выбрать город</p>
+			</div>
+			<div class="nav-head-1" id="phone">
+				<img src="icons/phone.svg">
+				<p class="p-header">8-(123)-456-78-90</p>
+			</div>
+			<div class="nav-head-1" id="up-user-buttons">
+				<img src="icons/account.svg">
+				<img src="icons/cart.svg">
+			</div>
+		</nav>
+		<nav class="nav-bottom">
+			<div class="nav-head-2">
+				<a href="#" class="head-link">О нас</a>
+			</div>
+			<div class="nav-head-2">
+				<a href="#" class="head-link">Как мы работаем</a>
+			</div>
+			<div class="nav-head-2">
+				<a href="#" class="head-link">Меню</a>
+			</div>
+			<div class="nav-head-2">
+				<a href="#" class="head-link">Как оформить заказ</a>
+			</div>
+			<div class="nav-head-2">
+				<a href="#" class="head-link">Доставка и оплата</a>
+			</div>
+		</nav>
+	</header>
+	<div class="main" align="center">
+		<div class="inline-div" id="main-div-presents">
+			<div>
+				<div align="left">
+					<h1 class="h1-1">ДОСТАВКА <span class="green-span">ПРАВИЛЬНОГО ПИТАНИЯ</span> НА ДОМ</h1>
+					<p class="def-text">Сбалансированные рационы питания с суточной нормой витаминов доставкой на дом!</p>
+					<div class="inline-div">
+						<button id="button-order">Заказать</button>
+						<button id="button-diet">Подобрать рацион</button>
+					</div>
+				</div>
+				<div align="left">
+					<p id="popular-dishes">Популярные <span class="green-span">блюда</span></p>
+					<div class="inline-div">
+						<div class="dishes inline-div-only">
+							<img class="dishes" src="pictures/popular_food_1.png">
+							<div class="dish-pad">
+								<p class="dishes-p-head">Рис с овощами и рыбой</p>
+								<p class="kcal-p-head">300 ккал</p>
+								<hr class="hr-1">
+								<p class="dishes-p-desc">Листья салата, пекинская капуста, яйцо, авокадо, помидоры</p>
+								<hr class="hr-2">
+								<div class="inline-div-only">
+									<p class="dishes-p-money"><span class="green-span">450 ₽</span> <s class="money-s">500 ₽</s></p>
+									<img class="inline-div-only" src="icons/heart.svg">
+									<img class="right-image-2" src="icons/cart_small.svg">
+								</div>
+							</div>
+						</div>
+						<div class="dishes inline-div-only">
+							<img class="dishes" src="pictures/popular_food_2.png">
+							<div class="dish-pad">
+								<p class="dishes-p-head">Салат с яйцом и фасолью</p>
+								<p class="kcal-p-head">200 ккал</p>
+								<hr class="hr-1">
+								<p class="dishes-p-desc">Листья салата, морковь, яйцо, фасоль, тушеная капуста</p>
+								<hr class="hr-2">
+								<div class="inline-div-only">
+									<p class="dishes-p-money"><span class="green-span">300 ₽</span> <s class="money-s">350 ₽</s></p>
+									<img class="inline-div-only" src="icons/heart.svg">
+									<img class="right-image-2" src="icons/cart_small.svg">
+								</div>
+							</div>
+						</div>
+						<div class="dishes inline-div-only">
+							<img class="dishes" id="many-dishes-pic"src="pictures/popular_food_3.png">
+							<div class="dish-pad">
+								<p class="dishes-p-head">Свежий летний салат</p>
+								<p class="kcal-p-head">200 ккал</p>
+								<hr class="hr-1">
+								<p class="dishes-p-desc">Листья салата, пекинская капуста, яйцо, авокадо, орехи</p>
+								<hr class="hr-2">
+								<div class="inline-div-only">
+									<p class="dishes-p-money"><span class="green-span">250 ₽</span> <s class="money-s">300 ₽</s></p>
+									<img class="inline-div-only" src="icons/heart.svg">
+									<img class="right-image-2" src="icons/cart_small.svg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="main-plates">
+				<img class="main-plates" src="pictures/plates.png">
+			</div>
+		</div>
+
+		<div>
+			<div>
+				<h2 class="h2-1">Выбирайте <span class="green-span">по категориям</span></h2>
+			</div>
+			<div class="inline-div">
+				<div class="category-div" id="category-bg-1">
+					<img id="dish-cat-img-1" src="pictures/plate_1.png">
+					<div class="dish-cat" id="strange-pic-1-here">
+						<a href="#"><p class="dish-cat-p-1">Салаты</p></a>
+						<p class="dish-cat-p-2"><span class="green-span">20 элементов</span></p>
+					</div>
+				</div>
+				<div class="category-div" id="category-bg-2">
+					<img id="dish-cat-img-2" src="pictures/plate_2.png">
+					<div class="dish-cat" id="strange-pic-2-here">
+						<a href="#"><p class="dish-cat-p-1">Гарниры</p></a>
+						<p class="dish-cat-p-2"><span class="green-span">220 элементов</span></p>
+					</div>
+				</div>
+				<div class="category-div" id="category-bg-3">
+					<img class="dish-cat-img" src="pictures/soup.png">
+					<div class="dish-cat">
+						<a href="#"><p class="dish-cat-p-1">Супы</p></a>
+						<p class="dish-cat-p-2"><span class="green-span">10 элементов</span></p>
+					</div>
+				</div>
+				<div class="category-div" id="category-bg-4">
+					<img class="dish-cat-img" src="pictures/cake.png">
+					<div class="dish-cat">
+						<a href="#"><p class="dish-cat-p-1">ПП выпечка</p></a>
+						<p class="dish-cat-p-2"><span class="green-span">40 элементов</span></p>
+					</div>
+				</div>
+				<div class="category-div" id="category-bg-5">
+					<img class="dish-cat-img" src="pictures/cocktail.png">
+					<div class="dish-cat">
+						<a href="#"><p class="dish-cat-p-1">Напитки</p></a>
+						<p class="dish-cat-p-2"><span class="green-span">23 элементов</span></p>
+					</div>
+				</div>
+				<div class="category-div" id="category-bg-6">
+					<img class="dish-cat-img" src="pictures/seafood.png">
+					<div class="dish-cat">
+						<a href="#"><p class="dish-cat-p-1">Морепродукты</p></a>
+						<p class="dish-cat-p-2"><span class="green-span">3 элементов</span></p>
+					</div>
+				</div>
+				<div class="category-div" id="category-bg-7">
+					<img class="dish-cat-img" src="pictures/sauce.png">
+					<div class="dish-cat">
+						<a href="#"><p class="dish-cat-p-1">Соусы</p></a>
+						<p class="dish-cat-p-2"><span class="green-span">9 элементов</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h2 class="h2-2">Почему именно <span class="green-span">мы</span>?</h2>
+		<div class="inline-div">
+			<div align="center" class="why-us">
+				<img class="why-us" src="icons/vegetables.svg">
+				<p class="why-us-p-1">Лучшие продукты</p>
+				<p class="why-us-p-2">100% натуральный состав и свежие продукты</p>
+			</div>
+			<div align="center" class="why-us">
+				<img class="why-us" src="icons/vegetables.svg">
+				<p class="why-us-p-1">Лучшие продукты</p>
+				<p class="why-us-p-2">100% натуральный состав и свежие продукты</p>
+			</div>
+			<div align="center" class="why-us">
+				<img class="why-us" src="icons/vegetables.svg">
+				<p class="why-us-p-1">Лучшие продукты</p>
+				<p class="why-us-p-2">100% натуральный состав и свежие продукты</p>
+			</div>
+			<div align="center" class="why-us">
+				<img class="why-us" src="icons/vegetables.svg">
+				<p class="why-us-p-1">Лучшие продукты</p>
+				<p class="why-us-p-2">100% натуральный состав и свежие продукты</p>
+			</div>
+		</div>
+		<h2 class="h2-2">Выберите <span class="green-span">рацион</span>, который подходит именно вам</h2>
+		<div>
+			<div class="inline-div">
+				<div class="button-choise-type">
+					<button class="button-choise-type">Салаты</button>
+				</div>
+				<div>
+					<button class="button-choise-type">Гарниры</button>
+				</div>
+				<div>
+					<button class="button-choise-type">Супы</button>
+				</div>
+				<div>
+					<button class="button-choise-type">ПП выпечка</button>
+				</div>
+				<div>
+					<button class="button-choise-type">Напитки</button>
+				</div>
+				<div>
+					<input type="search" placeholder=" Название блюда" id="search-1">
+				</div>
+			</div>
+		</div>
+
+		<div align="center" id="choise-mode-main">
+			<div class="inline-div">
+				<div class="choise-mode">
+					<button class= "choise-mode">Стандартный</button>
+				</div>
+				<div class="choise-mode">
+					<button class= "choise-mode">Премиум</button>
+				</div>
+				<div class="choise-mode">
+					<button class= "choise-mode">Самостоятельный</button>
+					<hr class="hr-3">
+				</div>
+			</div>
+		</div>
+
+		<div class="inline-div eat-mode-set">
+			<div class="select-block">
+				<p class="select-block">Кол-во калорий</p>
+				<select class="select-block">
+					<option>2 000 ккал</option>
+					<option>1 500 ккал</option>
+					<option>1 200 ккал</option>
+					<option>2 2000 ккал</option>
+				</select>
+			</div>
+			<div class="select-block">
+				<p class="select-block">Дни недели</p>
+				<select class="select-block">
+					<option>Понедельник</option>
+					<option>Вторник</option>
+					<option>Среда</option>
+					<option>Четверг</option>
+					<option>Пятница</option>
+					<option>Суббота</option>
+					<option>Воскресенье</option>
+				</select>
+			</div>
+			<div align="center" class="count-d-n-p">
+				<div>
+					<p class="count-d-n-p">Количество дней</p>
+				</div>
+				<div class="inline-div">
+					<button class="count-d-n-p-1">2</button>
+					<button class="count-d-n-p-1">3</button>
+					<button class="count-d-n-p-1">4</button>
+					<button class="count-d-n-p-1">5</button>
+					<button class="count-d-n-p-1">6</button>
+				</div>
+			</div>
+			<div align="center" class="count-d-n-p">
+				<div>
+					<p class="count-d-n-p">Количество персон</p>
+				</div>
+				<div class="inline-div">
+					<button class="count-d-n-p-2">1</button>
+					<button class="count-d-n-p-2">3</button>
+					<button class="count-d-n-p-2">6</button>
+				</div>
+			</div>
+			<div class="find-ration-button">
+				<button class="find-ration-button">Подобрать</button>
+			</div>
+			<div class="inline-div">
+				<div class="find-ration-url">
+					<a class="find-ration-url" href="#">Подробнее</a>
+				</div>
+				<div class="find-ration-url">
+					<img src="icons/arrow_right.svg">
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="inline-div" id="news-in-menu-bg">
+			<div align="left" class="news-in-menu">
+				<div>
+					<h1 class="news-in-menu">НОВИНКИ <span class="green-span">МЕНЮ!</span></h1>
+					<h2 class="news-in-menu"><span class="green-span">Детокс</span> программа</h2>
+				</div>
+				<div class="inline-div">
+					<div class="inline-div">
+						<img src="icons/clock.svg">
+						<p class="news-in-menu" id="days-new-menu-p">5 дней</p>
+					</div>
+					<div class="inline-div">
+						<img src="icons/fire.svg">
+						<p class="news-in-menu">1 200 кКал</p>
+					</div>
+				</div>
+				<div id="test-1">
+					<p class="news-in-menu" id="news-in-menu-desc">Программа очищения, состоящая из смузи-коктейлей. В составе натуральные продукты с прекрасным вкусовым сочетанием</p>
+					<h2 class="news-in-menu">от 1 500 ₽</h2>
+				</div>
+				<div>
+					<button class="news-in-menu">Заказать</button>
+					<a class="news-in-menu">Подробнее</a>
+					<img src="icons/arrow_right.svg">
+				</div>
+			</div>
+			<div id="new-menu-arrow-div">
+				<img src="icons/arrow_right.svg">
+			</div>
+		</div>
+		<br>
+		<div class="inline-div" id="leaf-div">
+			<div>
+				<img class="ready-made-rations" src="pictures/leaf.png">
+			</div>
+			<div>
+				<h2 class="ready-made-rations">Готовые <span class="green-span">рационы</span></h2>
+				<p class="ready-made-rations">Вы можете исключить любой ингредиент, блюдо или тип блюда по желанию</p>
+			</div>
+		</div>
+		
+		<div align="center">
+			<div align="center" class="inline-div" id="ready-made-rat-block-margin">
+				<div class="ready-made-rat-block">
+					<div class="ready-made-rat-block-img" id="ready-made-rat-block-img-1"></div>
+					<div class="ready-made-rat-block-text">
+						<div>
+							<p class="ready-made-rat-block-text-head"><span class="green-span">1 000 ккал 3х-разовое</span></p>
+							<p class="ready-made-rat-block-text">Рацион состоит из 3 блюд на 850 ккал и суточной нормой всех витаминов. Предназначено для быстрого снижения веса.</p>
+						</div>
+						<div class="inline-div">
+							<h2 class="ready-made-rat-block-text">1 000 ₽</h2>
+							<p class="per-day">/ в день</p>
+						</div>
+						<div>
+							<button class="ready-made-rat-block-text-main">Заказать</button>
+						</div>
+					</div>
+				</div>
+				<div  class="ready-made-rat-block ready-made-rat-block-center">
+					<div class="ready-made-rat-block-img" id="ready-made-rat-block-img-2"></div>
+					<div class="ready-made-rat-block-text">
+						<div>
+							<p class="ready-made-rat-block-text-head"><span class="white-span">2 000 ккал 4х-разовое</span></p>
+							<p class="ready-made-rat-block-text"><span class="white-span">Рацион состоит из 4 блюд на 2 000 ккал и суточной нормой всех витаминов. Предназначено для поддержания желаемого веса.</span></p>
+						</div>
+						<div class="inline-div">
+							<h2 class="ready-made-rat-block-text"><span class="white-span">1 900 ₽</span></h2>
+							<p class="per-day"><span class="white-span">/ в день</span></p>
+						</div>
+						<div>
+							<button class="ready-made-rat-block-text-center">Заказать</button>
+						</div>
+					</div>
+				</div>
+				<div  class="ready-made-rat-block">
+					<div class="ready-made-rat-block-img" id="ready-made-rat-block-img-3"></div>
+					<div class="ready-made-rat-block-text">
+						<div>
+							<p class="ready-made-rat-block-text-head"><span class="green-span">1 200 ккал 3х-разовое</span></p>
+							<p class="ready-made-rat-block-text">Рацион состоит из 3 блюд на 850 ккал и суточной нормой всех витаминов. Предназначено для быстрого снижения веса.</p>
+						</div>
+						<div class="inline-div">
+							<h2 class="ready-made-rat-block-text">1 200 ₽</h2>
+							<p class="per-day">/ в день</p>
+						</div>
+						<div>
+							<button class="ready-made-rat-block-text-main">Заказать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div align="center">
+			<div>
+				<h2 class="h2-2" id="h2-3">Как оформить <span class="green-span">заказ</span></h2>
+				<p class="ready-made-rations">В любое место и время!</p>
+			</div>
+			<div class="inline-div" id="how-to-order-margin">
+				<div class="how-to-order">
+					<img class="how-to-order" src="icons/task_square.svg">
+					<p class="how-to-order-h">Выбираете рацион</p>
+					<p class="how-to-order">Все блюда разделены по типу: завтраки, салаты, горячие блюда, десерты.</p>
+				</div>
+				<div class="how-to-order">
+					<img class="how-to-order" src="icons/car_delivery.svg">
+					<p class="how-to-order-h">Ожидаете курьера</p>
+					<p class="how-to-order">Доставка рационов осуществляется каждый день в удобное для вас место</p>
+				</div>
+				<div class="how-to-order">
+					<img class="how-to-order" src="icons/dish_eat.svg">
+					<p class="how-to-order-h">Наслаждаетесь</p>
+					<p class="how-to-order">Приятного аппетита!</p>
+				</div>
+			</div>
+		</div>
+
+		<div align="center" class="reviews-block">
+			<div>
+				<div>
+					<h2 class="h2-2"><span class="white-span">Отзывы наших </span><span class="green-span">клиентов</span></h2>
+				</div>
+				<div align="center" class="inline-div benefits-blocks">
+					<div class="benefits-block">
+						<p class="benefits-block-h"><span class="green-span">20%</span></p>
+						<p class="benefits-block">Скидки на каждый месяц</p>
+					</div>
+					<div class="benefits-block">
+						<p class="benefits-block-h"><span class="green-span">2 000+</span></p>
+						<p class="benefits-block">Клиентов</p>
+					</div>
+					<div class="benefits-block">
+						<p class="benefits-block-h"><span class="green-span">500+</span></p>
+						<p class="benefits-block">Положительных отзывов</p>
+					</div>
+				</div>
+				<br>
+				<div align="center" class="inline-div" id="rewiews-margin">
+					<div class="inline-div review-block">
+						<div>
+							<img class="review-block" src="pictures/review/person_1.png">
+						</div>
+						<div align="left" class="review-block-text">
+							<p class="review-block-p-h">Виктория</p>
+							<p class="review-block-p"><span class="gray-span">25 лет</span></p>
+							<p class="review-block-p">Потрясающая доставка! Очень вкусно, а главное полезно! Пришла в форму за месяц.</p>
+						</div>
+					</div>
+					<div class="inline-div review-block">
+						<div>
+							<img class="review-block" src="pictures/review/person_2.png">
+						</div>
+						<div align="left" class="review-block-text">
+							<p class="review-block-p-h">Анна</p>
+							<p class="review-block-p"><span class="gray-span">35 лет</span></p>
+							<p class="review-block-p">Готовый рацион на целый день, без лишней траты времени и грязной посуды. Как же это удобно , а главное очень вкусно!</p>
+						</div>
+					</div>
+					<div class="inline-div review-block">
+						<div>
+							<img class="review-block" src="pictures/review/person_3.png">
+						</div>
+						<div align="left" class="review-block-text">
+							<p class="review-block-p-h">Полина</p>
+							<p class="review-block-p"><span class="gray-span">30 лет</span></p>
+							<p class="review-block-p">Результат за короткое время! Очень здорово! Очень удобно, пользуюсь постоянно.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div align="left" class="promo-offer-main">
+			<div class="promo-offer">
+				<p id="promo-offer-1">АКЦИЯ! + БЕСПЛАТНАЯ ДОСТАВКА</p>
+				<p id="promo-offer-2">6 блюд на двоих </p>
+				<p id="promo-offer-3">1 500 ₽/ДЕНЬ</p>
+				<button id="promo-offer-button">Заказать</button>
+			</div>
+		</div>
+
+		<div class="delivery-and-pay-main">
+			<div class="inline-div" id="delivery-and-pay-padding">
+				<div align="left">
+					<div>
+						<p class="delivery-and-pay-h"><span class="green-span">Доставка</span> и оплата</p>
+						<p class="delivery-and-pay-text">По городу и пригород до 50 км - бесплатно</p>
+					</div>
+					<div class="delivery-and-pay-desc">
+						<div class="delivery-and-pay-block inline-div">
+							<div>
+								<img class="delivery-and-pay-block" src="icons/car_time.svg">
+							</div>
+							<div align="left">
+								<p class="delivery-and-pay-block-h">Быстрая доставка</p>
+								<p class="delivery-and-pay-block-p">Время ожидания курьера по адресу составляет 20 минут </p>
+							</div>
+						</div>
+						<div class="delivery-and-pay-block inline-div">
+							<div>
+								<img class="delivery-and-pay-block" src="icons/wallet.svg">
+							</div>
+							<div align="left">
+								<p class="delivery-and-pay-block-h">Оплата</p>
+								<p class="delivery-and-pay-block-p">Оплата производится наличными курьеру за недельный рацион, согласно выбранному тарифному плану</p>
+							</div>
+						</div>
+						<div class="delivery-and-pay-block inline-div ">
+							<div>
+								<img class="delivery-and-pay-block" src="icons/timer_pause.svg">
+							</div>
+							<div align="left">
+								<p class="delivery-and-pay-block-h">Перенос заказа</p>
+								<p class="delivery-and-pay-block-p">Если Вам необходимо пропустить следующий день, необходимо до 14-00 сообщить об этом оператору </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="delivery-and-pay-map" align="left">
+					<img class="delivery-and-pay-map" src="pictures/map.png">
+					<p class="delivery-and-pay-map">Узнай, в какой зоне твой адрес:</p>
+					<input type="search" placeholder="Введите адрес" id="search-2">
+				</div>
+			</div>
+		</div>
+
+		<h2 class="h2-2">Часто задаваемые <span class="green-span">вопросы</span></h2>
+
+		<div align="center" class="inline-div">
+			<button class="button-choise-type">Доставка</button>
+			<button class="button-choise-type">Питание</button>
+			<button class="button-choise-type">Результаты</button>
+		</div>
+
+		<div align="center" class="chavo-det-block">
+			<details class="chavo-det-block">
+				<summary class="chavo-det-block">Какая программа подойдет лично мне?</summary>
+				<p align="left" class="chavo-det-block">Свяжитесь с нами, и мы подберём для вас идеальную программу!</p>
+			</details>
+			<hr class="chavo-det-block">
+			<details class="chavo-det-block">
+				<summary class="chavo-det-block">Можно ли подогревать блюда в контейнерах?</summary>
+				<p align="left" class="chavo-det-block">Да, можно! Но необходимо снимать крышку перед этим.</p>
+			</details>
+			<hr class="chavo-det-block">
+			<details class="chavo-det-block">
+				<summary class="chavo-det-block">Как готовятся блюда?</summary>
+				<p align="left" class="chavo-det-block">Блюда готовятся нашими профессиональными поварами. Подробнее вы можете узнать на нашем канале в телеграме.</p>
+			</details>
+			<hr class="chavo-det-block">
+			<details class="chavo-det-block">
+				<summary class="chavo-det-block">Срок хранения наших блюд</summary>
+				<p align="left" class="chavo-det-block">Срок хранения зависит от блюд, но как правило он составляет 1-2 суток.</p>
+			</details>
+			<hr class="chavo-det-block">
+			<details class="chavo-det-block">
+				<summary class="chavo-det-block">Консультации специалистов</summary>
+				<p align="left" class="chavo-det-block">Свяжитесь с нами для консультации!</p>
+			</details>
+		</div>
+
+		<div class="end-block-wrapper">
+			<div class="inline-div" id="end-block-wrapper-padding">
+				<div align="left" class="end-block-wrapper-item">
+					<div>
+						<p class="end-block-wrapper-item-h">+7 (123) 45-67-89</p>
+						<a class="end-block-wrapper-item-a" href="#">Заказать обратный звонок</a>
+					</div>
+					<div class="inline-div">
+						<img class="end-block-wrapper-item-img" src="icons/vk_icon.svg">
+						<img class="end-block-wrapper-item-img" src="icons/tg_icon.svg">
+					</div>
+				</div>
+				<div align="left" class="end-block-wrapper-item">
+					<p class="end-block-wrapper-item-h">Вопросы</p>
+					<p class="end-block-wrapper-item-p">Оплата</p>
+					<p class="end-block-wrapper-item-p">Вопросы</p>
+					<p class="end-block-wrapper-item-p">Вакансии</p>
+					<p class="end-block-wrapper-item-p">Отзывы</p>
+				</div>
+				<div align="left" class="end-block-wrapper-item">
+					<p class="end-block-wrapper-item-h">Поддержка</p>
+					<p class="end-block-wrapper-item-p">Оферта</p>
+					<p class="end-block-wrapper-item-p">Контакты</p>
+					<p class="end-block-wrapper-item-p">Политика конфиденциальности</p>
+				</div>
+				<div align="left" class="end-block-wrapper-item">
+					<p class="end-block-wrapper-item-h">Рассылка новостей</p>
+					<p class="end-block-wrapper-item-p">Подпишитесь на рассылку новостей</p>
+					<form class="end-block-wrapper-item-form">
+						<input class="end-block-wrapper-item-form" type="search" placeholder="Введите E-mail" id="end-block-wrapper-item-form">
+						<button class="end-block-wrapper-item-form">Отправить</button>
+					</form>		
+				</div>
+			</div>
+			<div class="end-block-wrapper-item-hr">
+				<hr class="end-block-wrapper-item-hr">
+			</div>
+			<div>
+				<p class="end-block-wrapper-item-p-logo">© HealthyFood Delivery 2022</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
